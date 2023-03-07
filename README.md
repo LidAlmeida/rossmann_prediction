@@ -1,5 +1,5 @@
 # PREVISÃO DE VENDAS - ROSSMANN DROGERIEMARKT
-![Imagem de uma loja da rede Rossmann](img/loja_rossmann.jpg)
+![Imagem de uma loja da rede Rossmann](img/rossmann.png)
 
 ## 💻 Problema de negócio
 
