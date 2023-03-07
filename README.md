@@ -11,6 +11,8 @@
 
 ## Estratégia de solução
 
+![Ciclo Crisp DS](img/crisp.png)
+
 1. Definição do problema: compreender o contexto do negócio e os objetivos do projeto.
 
 2. Coletar e limpar os dados: coletar os dados e executar as etapas de limpeza e pré-processamento de dados. Incluindo: tratamento de valores ausentes, valores discrepantes e a transformação dos dados para torná-los utilizáveis para análise.
@@ -27,7 +29,7 @@
 
 8. Comunicação e documentação: Comunicar os resultados do projeto aos stakeholders relevantes e documentar o processo e os resultados para referência futura.
 
-![Ciclo Crisp DS](img/crisp.png)
+
 
 
 ## Top 3 Data Insights
