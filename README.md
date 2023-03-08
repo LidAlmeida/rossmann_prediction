@@ -1,5 +1,5 @@
 # PREVISÃO DE VENDAS - ROSSMANN DROGERIEMARKT
-![Imagem de uma loja da rede Rossmann](img/loja_rossmann.jpg)
+![Imagem de uma loja da rede Rossmann](img/rossmann.png)
 
 ## 💻 Problema de negócio
 
@@ -10,6 +10,8 @@
 
 
 ## Estratégia de solução
+
+![Ciclo Crisp DS](img/crisp.png)
 
 1. Definição do problema: compreender o contexto do negócio e os objetivos do projeto.
 
@@ -27,7 +29,7 @@
 
 8. Comunicação e documentação: Comunicar os resultados do projeto aos stakeholders relevantes e documentar o processo e os resultados para referência futura.
 
-![Ciclo Crisp DS](img/crisp.png)
+
 
 
 ## Top 3 Data Insights
