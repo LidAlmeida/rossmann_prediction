@@ -20,11 +20,9 @@ Para enfrentar essa questão, apresentamos um projeto que utiliza técnicas de D
     
 Foram estabelecidas as seguintes premissas para a construção da solução de previsão de vendas:
 
-1. A disponibilidade da previsão de vendas será via aplicativo do Telegram, permitindo sua consulta a qualquer momento.
+1. A previsão de vendas será feita exclusivamente para as lojas que tiveram vendas registradas na base de dados.
 
-2. A previsão de vendas será feita exclusivamente para as lojas que tiveram vendas registradas na base de dados.
-
-3. Para a realização da previsão de vendas, serão excluídos os dias em que as lojas estiveram fechadas.
+2. Para a realização da previsão de vendas, serão excluídos os dias em que as lojas estiveram fechadas.
 
 
 ## 2. Descrição dos dados
