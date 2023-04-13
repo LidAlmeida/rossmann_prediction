@@ -5,12 +5,10 @@
 
 
 ## A Rossmann Drogeriemarkt
-***
 
 A Rossmann Drogeriemarkt é uma rede de farmácias e drogarias alemã, fundada em 1972 por Dirk Roßmann. Atualmente, é uma das maiores redes de drogarias da Europa, com mais de 4.500 lojas em 8 países. A empresa oferece uma ampla variedade de produtos, incluindo medicamentos, produtos de higiene pessoal, beleza, bem-estar e alimentos saudáveis.
 
 ## 1. O problema de negócio
-***
 
 A Rossmann Drogeriemarkt valoriza a comodidade e satisfação dos clientes. Com esse objetivo, a empresa está sempre em busca de oferecer estruturas mais completas. Investindo em melhorias que tornem a experiência de compra ainda mais agradável, como vagas de estacionamento, sistemas de ar condicionado e banheiros para clientes. Neste contexto, a previsão de vendas para as próximas seis semanas é fundamental para que o CFO possa determinar os valores a serem investidos em reformas para cada loja da rede.
 
@@ -18,9 +16,7 @@ Atualmente, as previsões são realizadas utilizando a média. Embora seja uma a
 
 Para enfrentar essa questão, apresentamos um projeto que utiliza técnicas de Data Science para prever as vendas de cada loja de forma automática e mais precisa. Com isso, o CFO terá informações mais confiáveis e consistentes para determinar o investimento em cada loja, melhorando assim a estrutura e o atendimento ao público, mantendo a posição de destaque da Rossmann no mercado de drogarias na Alemanha.
 
-
 ### 1. 2 Premissas
-***
     
 Foram estabelecidas as seguintes premissas para a construção da solução de previsão de vendas:
 
@@ -32,7 +28,6 @@ Foram estabelecidas as seguintes premissas para a construção da solução de p
 
 
 ## 2. Descrição dos dados
-***
 
 Os dados utilizados neste projeto foram coletados a partir da plataforma Kaggle e englobam informações históricas de vendas em 1.115 lojas da rede Rossmann. As descrições iniciais dos atributos presentes nos dados estão listadas abaixo:
 
@@ -55,7 +50,6 @@ Promo_interval | Descreve os intervalos consecutivos em que a Promo2 é iniciada
 
 
 ## 3. Estratégia de solução
-***
 
 ![Ciclo Crisp DS](img/crisp.png)
 
@@ -79,7 +73,6 @@ Promo_interval | Descreve os intervalos consecutivos em que a Promo2 é iniciada
 
 
 ## 4. Ferramentas utilizadas
-***
 
 - Python
 - Bibliotecas Python: pandas, Matplotlib, Seaborn, Numpy, sidetable e Sklearn
@@ -88,7 +81,6 @@ Promo_interval | Descreve os intervalos consecutivos em que a Promo2 é iniciada
 
 
 ## 5. Técnicas utilizadas
-***
 
 - Análise Exploratória de Dados (EDA)
 - Seleção de recursos com a utilização do Boruta
@@ -98,7 +90,6 @@ Promo_interval | Descreve os intervalos consecutivos em que a Promo2 é iniciada
 
 
 ## 6. Principais insights
-***
 
 Um conjunto de fatores pode afetar o desempenho das vendas nas lojas físicas de uma rede de drogarias. Para definir o objetivo da análise e identificar as variáveis relevantes, foi criado um mapa mental que trouxe clareza à estrutura da análise e permitiu a identificação de padrões e tendências.
 
@@ -106,7 +97,6 @@ Um conjunto de fatores pode afetar o desempenho das vendas nas lojas físicas de
 
 
 ### A proximidade com uma loja concorrente não afeta negativamente as vendas
-***
 
 Ao considerarmos a presença de concorrentes próximos, é comum esperar uma redução nas vendas e no número de clientes, pois os consumidores têm mais opções de escolha e podem optar por comprar em lojas concorrentes mais próximas. No entanto, a análise de dados sugere que a distância das lojas concorrentes não tem influência na média de vendas. Outros fatores, como localização, preço e promoções, podem ter uma influência maior sobre as vendas.
 
@@ -120,7 +110,6 @@ Esses fatores, combinados ou isolados, podem explicar por que a presença de con
 
 
 ###  Lojas com promoções extendidas não vendem mais
-***
 
 Ao analisarmos as vendas médias ao longo das semanas do ano, é possível observar que os períodos de promoção tradicional têm as maiores médias de vendas em todas as semanas do ano, seguidos pelo período de promoção tradicional com promoção estendida. Curiosamente, quando o período de promoção é somente o estendido é que se observa a menor média de vendas.
 
@@ -134,7 +123,6 @@ A tendência de aumento nas médias de vendas nas últimas semanas do ano para o
 
 
 ### As vendas durante o Natal não são maiores em comparação a outros feriados
-***
 
 Utilizando o gráfico de boxplot para analisar as medianas das vendas para cada tipo de feriado em cada ano (2013, 2014 e 2015), podemos concluir que as vendas durante o período de Natal não apresentam diferenças significativas em relação a outros feriados. Observamos que a mediana das vendas durante o Natal é semelhante à mediana das vendas em outros feriados, como dias regulares e feriados públicos.
 
@@ -150,7 +138,6 @@ Por fim, é válido destacar que as variações nas vendas entre diferentes feri
 
 
 ### Padrões sazonais nas vendas ao longo de três anos e possíveis fatores influenciadores
-***
 
 Ao analisar o gráfico de linhas referente às vendas nos anos de 2013, 2014 e 2015, é possível identificar padrões de comportamento sazonal das vendas. Em 2013, houve picos de vendas em março, julho e dezembro, com dezembro apresentando as maiores vendas. Já em 2014, houve um platô nas vendas de março a junho, seguido por uma queda até novembro, com dezembro registrando o pico de vendas. Embora os dados de 2015 não estejam completos, os primeiros sete meses do ano mostraram um comportamento semelhante ao do ano anterior, com picos de vendas em março e julho, e vendas mais baixas em fevereiro e maio.
 
@@ -160,19 +147,15 @@ Com base nesses padrões, é possível formular hipóteses sobre os fatores que 
 
 
 ## 7. Modelos de Machine Learning
-***
 
 Neste projeto, uma etapa fundamental foi a modelagem de Machine Learning para a previsão de vendas em cada loja. Para isso, foram treinados cinco modelos: média, regressão linear, regressão linear regularizada (Lasso), Random Forest Regressor e XGBoost Regressor.
 
-
 ### 7.1 Escolha das métricas
-***
 
 A média era o método padrão de previsão das vendas na rede de drogarias e foi empregado como linha de base para a comparação com outros algoritmos. Para avaliar o desempenho de cada modelo, utilizou-se o **Root Mean Squared Error** (RMSE), uma métrica comumente utilizada para medir a precisão de modelos de regressão. Quanto menor o valor do RMSE, melhor é o desempenho do modelo. Além disso, também foi utilizada a métrica **MAPE** (Mean Absolute Percentage Error), que calcula a média das porcentagens de erro absoluto em relação aos valores reais. Essa métrica é de fácil interpretação para a área de negócios, pois indica o erro percentual médio das previsões em relação às vendas reais. Por exemplo, um MAPE de 5%, significa que em média, as previsões estão errando em 5% em relação às vendas reais. Essa informação pode ser muito útil para gestores de negócios, pois ajuda a entender o quão confiáveis são as previsões de vendas e possibilita ajustes em estratégias e planejamentos.
 
 
 ### 7.2 Métricas iniciais dos algoritmos
-***
 
 Os resultados iniciais mostraram que a regressão Lasso apresentou o pior desempenho, seguida pela regressão linear. Por outro lado, os modelos de árvore (Random Forest Regressor, XGBoost Regressor) apresentaram os melhores desempenhos.
 
@@ -181,13 +164,12 @@ Os resultados iniciais mostraram que a regressão Lasso apresentou o pior desemp
 | Regressão Lasso | 2131.9 | 0.33  | 3014.62 |
 | Regressão Linear | 2096.45 | 0.33 | 2929.92 |
 | Média | 1354.8 | 0.21 | 1835.14 |
-| **XGBoost Regressor | 953.37 | 0.14 | 1391.75** |
-| **Random Forest Regressor | 826.18 | 0.12 | 1213.59** |
+| XGBoost Regressor | 953.37 | 0.14 | 1391.75 |
+| Random Forest Regressor | 826.18 | 0.12 | 1213.59 |
 
 
 
 ### 7.3 Métricas dos algoritmos com Cross Validation
-***
 
 Após a fase de testes dos algoritmos selecionados, foi realizada a validação por meio da técnica de Cross Validation para avaliar o desempenho real de cada modelo. Devido à natureza do problema de previsão de vendas, que envolve uma série temporal, optou-se por utilizar a técnica de Cross Validation específica para séries temporais, que considera a ordem temporal dos dados no treinamento dos modelos, garantindo, assim, uma avaliação mais precisa e realista do desempenho dos modelos.
 
@@ -199,7 +181,7 @@ Os resultados obtidos após a aplicação da técnica de Cross Validation demons
 | Regressão Linear | 2204.71 ± 113.73 | 0.36 ± 0.01 | 3041.01 ± 184.58 |
 | Regressão Lasso | 2248 ± 90.11 | 0.37 ± 0.01 | 3133.63 ± 167.91 |
 | Random Forest Regressor | 1438.87 ± 164.4 | 0.23 ± 0.02 | 2089.74 ± 245.91 |
-| **XGBoost Regressor | 1432.58 ± 138.61 | 0.23 ± 0.02 | 1981.86 ± 208.18** |
+| XGBoost Regressor | 1432.58 ± 138.61 | 0.23 ± 0.02 | 1981.86 ± 208.18 |
 
 
 Existem diversas possíveis explicações para o fato do Random Forest Regressor e XGBoost Regressor terem apresentado melhor desempenho do que a Regressão Linear e Regressão Lasso. Uma possível explicação é que os algoritmos de Random Forest e XGBoost são mais complexos e flexíveis do que os algoritmos de regressão linear, permitindo que eles capturem relações mais complexas entre as variáveis de entrada e a variável de saída, neste caso, as vendas. Além disso, Random Forest e o XGBoost são algoritmos de aprendizado de máquina baseados em árvores de decisão, o que significa que eles podem capturar interações não-lineares entre as variáveis de entrada e saída, enquanto a regressão linear é limitada a relações lineares.
@@ -210,7 +192,6 @@ O modelo **XGBoost** foi selecionado como o melhor modelo para ajuste de hiperpa
 
 
 ### 7.4 Ajuste de Hiperparâmetros
-***
 
 Foi utilizada a técnica Random Search para ajuste de hiperparâmetros, a técnica consiste em selecionar aleatoriamente um conjunto de valores para treinar o modelo. É uma abordagem mais eficiente e econômica em termos de tempo e recursos computacionais. No entanto, a seleção aleatória de hiperparâmetros pode levar a uma exploração ineficiente do espaço de busca, deixando algumas regiões nunca exploradas e prejudicando a otimização em comparação a outras técnicas mais sistemáticas.
 
@@ -225,11 +206,12 @@ Foi utilizada a técnica Random Search para ajuste de hiperparâmetros, a técni
 | 7 | 1333.20 ± 182.52 | 0.20 ± 0.02| 1872.61 ± 252.96 |
 | 8 | 1277.83 ± 164.92 | 0.20 ± 0.02 | 1786.06 ± 236.32 |
 | 9 | 1308.60 ± 172.44 | 0.20 ± 0.02 | 1832.65 ± 248.18 |
-| **10 | 1259.81 ± 172.36 | 0.20 ± 0.03 | 1761.93 ± 242.23** |
+| 10 | 1259.81 ± 172.36 | 0.20 ± 0.03 | 1761.93 ± 242.23 |
 
 Na décima iteração desse processo, os parâmetros utilizados foram avaliados e considerados os melhores para o treinamento do modelo, pois resultaram em uma menor taxa de erro médio quadrático (RMSE) e em uma menor taxa de erro absoluto médio (MAE). 
 
 Parâmetros utilizados na décima iteração e escolhidos para o modelo final:
+
 | Hiperparâmetro | Melhor valor |
 |:------------|:---------|
 | n_estimators | 2000 |
@@ -241,7 +223,6 @@ Parâmetros utilizados na décima iteração e escolhidos para o modelo final:
  
  
 #### 7.4.1 Desempenho do modelo XGBoost após ajuste de hiperparâmetros
-***
 
 Após o ajuste de hiperparâmetros do modelo XGBoost por meio de Random Search, observou-se uma melhoria no desempenho do modelo. Portanto, as alterações realizadas nos parâmetros permitiram que o modelo capturasse com maior precisão as relações não-lineares entre as variáveis de entrada e saída, o que resultou em previsões mais precisas das vendas. 
 
@@ -251,7 +232,6 @@ Após o ajuste de hiperparâmetros do modelo XGBoost por meio de Random Search, 
 
 
 ### 7.5 Performance do modelo
-***
 
 Para analisar a performance de um modelo de previsão de vendas, é possível utilizar uma abordagem gráfica. No gráfico **REAL SALES x PREDICTIONS**, podemos visualizar a linha de predições em laranja e a linha das vendas reais em verde ao longo do tempo. É importante destacar que o sombreamento das linhas indica o intervalo de confiança, uma vez que o conjunto de dados contém vários valores de y ('Sales') para cada valor x ('Date').
 
@@ -271,7 +251,6 @@ No entanto, a presença de alguns pontos muito distantes da maioria pode nos ind
 
 
 ## 8. Os resultados do modelo com foco no negócio
-***
 
 Com relação à performance financeira do modelo XGBoost, os resultados obtidos para as previsões de vendas foram positivos, apresentando um MAPE de 5% para as cinco melhores previsões. O MAPE é um indicador que representa a média de erros percentuais absolutos na previsão de vendas.
 
@@ -294,7 +273,6 @@ Há várias possíveis causas para esse tipo de erro em uma previsão de vendas,
 
 Para lidar com essa situação, é necessário fazer uma análise mais detalhada dos dados da loja em questão e identificar possíveis problemas específicos. Com base nessa análise, é possível ajustar o modelo para incluir outras variáveis ou realizar outras técnicas para melhorar a previsão de vendas. O importante é estar ciente de que erros como esse podem ocorrer e estar preparado para lidar com eles de forma eficaz.
 
-
 | Store | Predição (€) | Pior cenário (€) | Melhor cenário (€) | MAE (€) | MAPE (%)|
 |:------------| :------------ | :------------ | :------------ |:------------| :------------|
 | 292 | 103467.29 | 100246.70 | 103467.83 | 3220.59 | 54 |
@@ -308,12 +286,11 @@ Para lidar com essa situação, é necessário fazer uma análise mais detalhada
 Considerando os resultados obtidos em nosso modelo de previsão de vendas, apresentamos agora a previsão total de vendas para as próximas seis semanas. É importante ressaltar que essas previsões foram geradas considerando tanto o melhor quanto o pior cenário, com base nas projeções realizadas pelo modelo. Essas previsões podem ser utilizadas pelos gestores para planejar suas estratégias e garantir um melhor desempenho financeiro da empresa.
 
 |Predição (€) | Pior cenário (€) | Melhor cenário (€) |
+|:------------| :------------ | :------------ |
 | 282,733,696.00 | 281,968,370.75 | 282,733,789.06 |
 
 
-
 # 9. Conclusões
-***
 
 O modelo de regressão XGBoost apresentou um bom desempenho na maioria das lojas, com um MAPE médio de 10%. No entanto, algumas lojas apresentaram resultados insatisfatórios, indicando a necessidade de investigar e solucionar possíveis problemas nessas lojas.
 
