@@ -49,7 +49,6 @@ Promo_interval | Descreve os intervalos consecutivos em que a Promo2 é iniciada
 
 ## 3. Estratégia de solução
 
-![Ciclo Crisp DS](img/crisp.png)
 
 **Passo a passo:**
 
@@ -93,6 +92,8 @@ Um conjunto de fatores pode afetar o desempenho das vendas nas lojas físicas de
 
 ![Mapa Mental](img/mind_map.jpg)
 
+As variáveis relevantes mapeadas nem sempre estarão disponíveis nos dados que temos. Por isso, é fundamental filtrar as perguntas de acordo com as informações disponíveis.
+
 
 ### A proximidade com uma loja concorrente não afeta negativamente as vendas
 
@@ -111,13 +112,19 @@ Esses fatores, combinados ou isolados, podem explicar por que a presença de con
 
 Ao analisarmos as vendas médias ao longo das semanas do ano, é possível observar que os períodos de promoção tradicional têm as maiores médias de vendas em todas as semanas do ano, seguidos pelo período de promoção tradicional com promoção estendida. Curiosamente, quando o período de promoção é somente o estendido é que se observa a menor média de vendas.
 
+Podemos calcular as porcentagens de queda ou aumento de vendas em relação à média quando as lojas não estão em período promocional (será nosso valor de referência para comparações). Segue abaixo os resultados e as porcentagens de queda ou aumento para cada cenário:
+
+- Período promocional estendido: média de vendas € 5529.57 (-12.62% em relação à média de referência).
+- Período promocional tradicional: média de vendas € 8618.45 (+36.19% em relação à média de referência).
+- Adesão aos dois períodos promocionais: média de vendas € 7836.67 (+23.84% em relação à média de referência).
+
 Existem algumas possíveis hipóteses que podem explicar esses resultados. Uma delas é que a promoção tradicional pode estar mais enraizada na cultura do consumidor e portanto, os clientes estão mais inclinados a comprar durante esse período. Além disso, a promoção estendida pode levar à diminuição da importância da promoção, tornando-a menos atraente para os clientes.
 
 A tendência de aumento nas médias de vendas nas últimas semanas do ano para o período promocional tradicional + promoção extendida e o período promocional tradicional pode estar relacionada com o fato de que muitas pessoas deixam as compras de presentes para a última hora, buscando aproveitar as promoções de última hora. Por fim, a queda nas médias de vendas observada nas últimas semanas e nas primeiras semanas do ano, tanto para o período não promocional quanto para o período promocional estendido, pode estar relacionada à redução do poder de compra do consumidor após o período de gastos durante as festas de fim de ano.
 
 É importante notar que, apesar das promoções parecerem ter um efeito positivo nas vendas, o gráfico de linhas mostra que as quedas nas médias de vendas são coincidentes, independentemente da presença de promoções nas lojas. Isso pode indicar outras variáveis, além da promoção, que afetam o comportamento do consumidor nas últimas semanas do ano.
 
-![Lineplot Sales and Promo](reports/figures/sales_promo_weekofyear.png)
+![Lineplot Sales and Promo](reports/figures/promotions_sales.png)
 
 
 ### As vendas durante o Natal não são maiores em comparação a outros feriados
