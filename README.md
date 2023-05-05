@@ -90,7 +90,7 @@ Promo_interval | Descreve os intervalos consecutivos em que a Promo2 é iniciada
 
 Um conjunto de fatores pode afetar o desempenho das vendas nas lojas físicas de uma rede de drogarias. Para definir o objetivo da análise e identificar as variáveis relevantes, foi criado um mapa mental que trouxe clareza à estrutura da análise e permitiu a identificação de padrões e tendências.
 
-![Mapa Mental](img/mind_map.jpg)
+![Mapa Mental](img/mind_map.png)
 
 As variáveis relevantes mapeadas nem sempre estarão disponíveis nos dados que temos. Por isso, é fundamental filtrar as perguntas de acordo com as informações disponíveis.
 
